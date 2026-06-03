@@ -1,5 +1,5 @@
 Name: Laboni Goswami
-Email: labonig1@umbc.edu
+Email: laboni.goswami@hotmail.com
 
 
 References / Help Received
@@ -18,16 +18,25 @@ A single color is defined for rays that hit an object, and a background color is
 Advanced features like shadows, reflection, refraction, etc. are not included in this project.
 
 
+Directory Structure
+---------------------
+proj1
+|---- hide.cpp
+|---- tetra-3.nff
+|---- balls.nff
+|---- gears.nff
+|---- Makefile
+
+
 Instructions
 --------------
-In this directory, there should be files named "hide.cpp", "tetra-3.nff", "gears.nff", "balls.nff", and a Makefile.
 The driver is hide.cpp. To compile the program, use the command "make hide" or just "make."
-To run the program, use the command "./hide input.nff output.ppm" where input.nff one of the three .nff files specified above, and
+To run the program, use the command "./hide input.nff output.ppm" where input.nff is one of the three .nff files specified above, and
 output.ppm is a .ppm file of your choosing. The Makefile also provides 3 commands:
 1. make tetra = ./hide tetra-3.nff tetra-3.ppm
 2. make gears = ./hide gears.nff gears.ppm
 3. make balls = ./hide balls.nff balls.ppm
-Note, even though all three commands are given, not all of them will produce the correct output. The Extra Credit section will clarify.
+Note, not all of these commands will produce the correct output; see the Extra Credit section.
 
 
 Extra Credit Implemented
@@ -37,6 +46,5 @@ This program works with spheres. The "make balls" command will produce the corre
 
 Extra Credit Unimplemented
 ----------------------------
-handle concave polygons. Splitting polygons into a fan of triangles only works for convex polygons. Instead, use the test-ray method to handle arbitrary concave polygons. Try the "gears" SPD program to generate a scene with some pretty complex polygons.
-Key words to search: "Ear clipping"
-
+This program does not handle:
+- Concave polygons. The "make gears" command will not produce the correct output.
