@@ -22,6 +22,7 @@ Directory Structure
 ---------------------
 proj1
 |---- hide.cpp
+|---- Entities.cpp
 |---- tetra-3.nff
 |---- balls.nff
 |---- gears.nff
