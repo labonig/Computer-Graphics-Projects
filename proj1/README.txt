@@ -30,6 +30,9 @@ proj1
 
 Instructions
 --------------
+This project makes use of the Eigen library for linear algebra. First, download the source code:
+https://libeigen.gitlab.io/eigen/docs-5.0/
+
 The driver is hide.cpp. To compile the program, use the command "make hide" or just "make."
 To run the program, use the command "./hide input.nff output.ppm" where input.nff is one of the three .nff files specified above, and
 output.ppm is a .ppm file of your choosing. The Makefile also provides 3 commands:
